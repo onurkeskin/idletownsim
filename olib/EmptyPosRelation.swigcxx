@@ -1,0 +1,11 @@
+// See swig.org for more inteface options,
+// e.g. map std::string to Go string
+
+%rename(print) Complex::operator<<; 
+
+%{
+#include "EmptyPosRelation.hpp"
+%}
+
+%include "EmptyPosRelation.hpp"
+

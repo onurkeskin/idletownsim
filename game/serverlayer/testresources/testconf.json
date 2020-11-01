@@ -1,0 +1,5 @@
+{
+  "setup_db": false,
+  "create_user": false,
+  "create_game": false
+}

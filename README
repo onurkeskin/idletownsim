@@ -1,0 +1,5 @@
+# Idle Town Sim
+
+My first go project to learn go language. Although it has all the good examples of how to be a bad go code, it made me somewhat comfortable with language(although i completely forgot using any go routines which is an integral part of go...). It also makes use of some cgo, it has c api to be called from go. It is actually cpp making use of OpenCV. 
+
+As I was using .net framework before, i was accustomed to out of the box services, as go was relatively small language, i just used the first framework popped up in a brief search. It uses slightly altered slumber at https://github.com/sogko/slumber. License can be found at related source codes.

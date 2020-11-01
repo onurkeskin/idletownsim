@@ -1,0 +1,22 @@
+//CREATE USER:
+
+curl -k --insecure -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"user": {"username": "onur", "password": "mastery", "email": "onurkeskin@ku.edu.tr"}}' 'https://35.187.109.134:443/api/users'
+
+// LOGIN
+
+curl -k --insecure -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"username": "onur", "password": "mastery"}' 'https://35.187.109.134:443/api/sessions'
+
+// GET SESSION
+
+curl -k --insecure -X GET --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIyMDE3LTA2LTAxVDE2OjMwOjU1WiIsImlhdCI6IjIwMTctMDUtMjlUMTY6MzA6NTVaIiwianRpIjoiNTkyYzRjYmY2NjU1YmEwZmNkYzM5MWY5IiwidXNlcklkIjoiNTg1OTM0NjJkY2JkNDMyNDg4MGM1YjllIn0.SAKBI4hM2qi_x5DzlNvEVxagzdWpdP7UYO4nLHeT_DEtdQ_iYN3tUu72kN0TTNpCXEHoPCm3WxSKD-QHgVz7azWMgwhd_bFgl2ISTnS8CbxAFysDUMsnIG7h3UZfOk_O6tzebB4q7C_2UkhPslwhHtNdTj9WN8k19y3aUprXEH8' 'https://35.187.109.134:443/api/sessions'
+
+// GET GAMES
+
+curl -k --insecure -X GET --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIyMDE3LTA2LTAxVDE2OjMwOjU1WiIsImlhdCI6IjIwMTctMDUtMjlUMTY6MzA6NTVaIiwianRpIjoiNTkyYzRjYmY2NjU1YmEwZmNkYzM5MWY5IiwidXNlcklkIjoiNTg1OTM0NjJkY2JkNDMyNDg4MGM1YjllIn0.SAKBI4hM2qi_x5DzlNvEVxagzdWpdP7UYO4nLHeT_DEtdQ_iYN3tUu72kN0TTNpCXEHoPCm3WxSKD-QHgVz7azWMgwhd_bFgl2ISTnS8CbxAFysDUMsnIG7h3UZfOk_O6tzebB4q7C_2UkhPslwhHtNdTj9WN8k19y3aUprXEH8' 'https://35.187.109.134:443/api/games'
+
+[{
+"_id" : ObjectId("59415b6f7fd37e3aa017c7ef"),
+"buildingname":"Factory",
+"globalidentifier":"factorybuilding1",
+"buildingdescription":"Factory Building"
+}]

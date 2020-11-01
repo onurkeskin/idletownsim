@@ -1,0 +1,7 @@
+runtime: go
+vm: true
+
+#[START env_variables]
+env_variables:
+  GCLOUD_STORAGE_BUCKET: serviceappbucket
+#[END env_variables]
